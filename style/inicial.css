@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --roxo: #6C63FF;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Inter", serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: fixed; /* Mantém a navbar fixa no topo */
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    padding: 2rem 0;
+}
+
+.navbar img {
+    height: 5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.navbar ul li {
+    border: 0.25rem solid transparent;
+    border-radius: 1.5rem;
+    padding: .7rem;
+    transition: border-color 0.3s;
+}
+
+.navbar ul li:hover {
+    border-color: #6C63FF;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* INICIAL */
+
+.inicial{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria 2 colunas de mesma largura */
+    align-items: center;
+    justify-content: center;
+}
+
+.inicial img {
+    width: 100%;
+}
+
+.inicial-texto{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+.inicial-texto a{
+    width: 50%;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2.5rem;
+    font-size: 2.3rem;
+    background-color: var(--roxo) ;
+    color: white;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, outline 0.3s ease;
+}
+
+.inicial-texto a:hover{
+    transform: scale(1.1); /* Aumenta o tamanho */
+}
+
+.inicial-texto h1{
+    font-size: 4rem;
+}
+
+.inicial-texto p{
+    font-size: 1.8rem;
+}
